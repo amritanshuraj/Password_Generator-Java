@@ -16,10 +16,10 @@ public class PasswordGenerator {
 
         do {
             try {
-                System.out.print("Enter the length of the password: ");
+                System.out.print("Enter the length of the password[=>11]: ");
                 length = scanner.nextInt();
 
-                if (length <= 0) {
+                if (length <= 11) {
                     System.out.println("Please enter a valid password length.");
                 }
 
@@ -29,7 +29,7 @@ public class PasswordGenerator {
                 length = 0;
             }
 
-        } while (length <= 0);
+        } while (length <= 11);
 
         return length;
     }
